@@ -84,7 +84,7 @@ section:nth-child(even){
 
 .header{
     padding:2rem 9%;
-    position: fixed;
+    position: auto;
     top:0; left: 0; right: 0;
     z-index: 1000;
     box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
@@ -603,5 +603,34 @@ section:nth-child(even){
     left: 0;
     width: 100%;
     height: 100%;
+  }
+  .banner {
+    font-size: 150%;
+    background: #009579;
+  }
+  
+  .banner__content {
+    padding: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .banner__text {
+    flex-grow: 3;
+    line-height: 1.4;
+    font-family: "Quicksand", sans-serif;
+  }
+  
+  .banner__close {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .banner__text,
+  .banner__close > span {
+    color: #ffffff;
   }
   
