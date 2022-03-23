@@ -25,13 +25,21 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 <body>
+    <section class="banner">
+        <div class="banner__content">
+             <div class="banner__text">
+                <strong>Important Notice:</strong> Due to some unexpected circumstances, our website/services will no longer be available from 1st April, 2022. We gave it our all. Thank you, again. You'll be missed.
+            </div>
+        </div>
+    </section>
     
 <!-- header section starts  -->
 
-<header class="header">
+<div class="header">
 
     <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> medcare </a>
 
@@ -45,7 +53,8 @@
 
     <div id="menu-btn" class="fas fa-bars"></div>
 
-</header>
+</div>
+
 
 <!-- header section ends -->
 
@@ -74,7 +83,7 @@
     <div class="icons">
         <i class="fas fa-user-md"></i>
         <h3>5+</h3>
-        <p>therapists at work</p>
+        <p>doctors at work</p>
     </div>
 
 
@@ -110,8 +119,8 @@
 
         <div class="box">
             <i class="fas fa-user-md"></i>
-            <h3>expert therapists</h3>
-        <p>our therapists are ready to help you out and let you grow</p>
+            <h3>expert doctors</h3>
+            <p>our doctors are ready to help you out and let you grow</p>
         </div>
 
         <div class="box">
@@ -317,4 +326,10 @@
 <script src="js/script.js"></script>
 
 </body>
+<script>
+    document.querySelector(".banner__close").addEventListener("click", function () {
+  this.closest(".banner").style.display = "none";
+});
+
+</script>
 </html>
